@@ -8,6 +8,13 @@
 @font-face {
   font-family: 'Mont';
   src: url('./fonts/MONT-REGULAR.TTF') format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Mont';
+  src: url('./fonts/MONT-SEMIBOLD.TTF') format('truetype');
   font-weight: 700;
   font-style: normal;
 }
@@ -22,8 +29,13 @@
 @font-face {
   font-family: 'Mont';
   src: url('./fonts/MONT-LIGHT.TTF') format('truetype');
-  font-weight: 600;
+  font-weight: 500;
   font-style: normal;
+}
+
+p, h1, h2 {
+  margin: 0;
+  padding: 0;
 }
 
 .App {
@@ -40,6 +52,7 @@
   flex-direction: row;
   align-items: center;
   gap: 790px;
+  margin-bottom: 37px;
 }
 
 .Header > div {
@@ -55,6 +68,63 @@
 h1 {
   font-size: 60px;
   font-weight: 900;
+  margin-bottom: 37.95px;
 }
 
+.EventCard {
+  display: flex;
+  flex-direction: row;
+  gap: 50px;
+  text-align: left;
+}
 
+.EventCard.reversed {
+  flex-direction: row-reverse;
+}
+
+.EventCard > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.EventCard > div > h2 {
+  font-weight: 950;
+  font-size: 48px;
+  margin-bottom: 44px;
+}
+
+.EventCard > div > p {
+  font-weight: 600;
+  font-size: 28px;
+  margin-bottom: 44px;
+}
+
+.Button.event-list {
+  font-size: 32px;
+  font-weight: 600;
+  color: #FFFFFF;
+  background-color: #1941D1;
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  width: fit-content;
+  padding: 10px 25px;
+  border-radius: 30px;
+}
+
+.events-list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  margin-top: 55.95px;
+}
+
+.slick-slide {
+  width: 600px !important;
+  height: 600px !important;
+  opacity: 0.6 !important;
+}
+
+.slick-center {
+  opacity: 0 !important;
+}

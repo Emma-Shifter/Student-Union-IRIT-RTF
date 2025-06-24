@@ -1,18 +1,25 @@
 import EventCard from "../components/event-card";
+import Footer from "../components/footer";
 import Header from "../components/header";
-import image01 from "../img/image-01.png"; 
+import ImageSlider from "../components/image-slider";
+import {eventsList, sliderList} from "../data";
 
 export default function MainPage(props) {
     return (
         <div className="App MainPage">
             <Header></Header>
             <h1>Наши мероприятия</h1>
-            <EventCard 
-                title='НЕДЕЛЯ ПЕРВОКУРСНИКОВ' 
-                image={image01} 
-                desc='Серия из нескольких мероприятий, направленных на знакомство 
-                первокурсников друг с другом, внеучебной жизнью, нашей командой и институтом.'>
-            </EventCard>
+            {/* <ImageSlider 
+                items={sliderList} 
+                emptyMessage="Нет оплаченных занятий за этот период"
+            /> */}
+            <div className="events-list-container">
+                {eventsList.map((elem) => (
+                    <EventCard cardClass={elem.cardClass} title={elem.title} desc={elem.desc} image={elem.image}></EventCard>
+                ))}
+            </div>
+
+            <Footer></Footer>
         </div>
     )
 }

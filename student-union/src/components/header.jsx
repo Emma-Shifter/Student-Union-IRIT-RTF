@@ -2,7 +2,7 @@ import logo from '../img/logo.svg';
 
 export default function Header(props) {
     return (
-        <div className="App Header">
+        <div className="Header">
             <img src={logo}></img>
             <div>
                 <a>мероприятия</a>
