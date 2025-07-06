@@ -33,7 +33,7 @@
   font-style: normal;
 }
 
-p, h1, h2 {
+p, h1, h2, h3 {
   margin: 0;
   padding: 0;
 }
@@ -224,3 +224,75 @@ h1 {
   gap: 20px;
 }
 
+/* Страница с командой */
+.TeamPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.TeamPage > h1{
+  align-self: flex-start;
+  text-align: start;
+  margin-bottom: 0;
+}
+.TeamPage > p {
+  align-self: flex-start;
+  font-size: 32px;
+  font-weight: 600;
+  text-align: start;
+  width: 60%;
+  margin-bottom: 100px;
+}
+
+.team-container {
+  display: grid;
+  grid-template-columns: repeat(3, 327px);
+  row-gap: 25px;
+  column-gap: 50px; 
+  justify-content: center; /* Центрируем всю сетку */
+  margin-bottom: 50px;
+}
+.team-container-spec {
+  display: grid;
+  grid-template-columns: repeat(2, 327px);
+  row-gap: 50px;
+  column-gap: 50px; 
+}
+.team-container > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  min-height: 139px;
+  max-width: 327px;
+}
+
+.PartOfTeam {
+  background-image: url(./img/POT-bg.svg);
+  background-repeat: no-repeat;
+  padding: 15px 15px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  height: 100%;
+}
+.PartOfTeam > h3 {
+  font-size: 32px;
+  font-weight: 900;
+  margin-bottom: 6px;
+  color: #28292C;
+}
+.PartOfTeam > p {
+  font-weight: 600;
+  font-size: 22px;
+  text-align: start;
+  color: #28292C;
+  width: 90%;
+}
+.PartOfTeam:hover {
+  background-image: url(./img/POT-bg-hover.svg);
+}
+.PartOfTeam:hover h3,
+.PartOfTeam:hover p {
+  color: #FFFFFF;
+}

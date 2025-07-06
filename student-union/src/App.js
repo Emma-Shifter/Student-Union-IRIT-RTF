@@ -15,7 +15,7 @@ function App() {
         <Route path="our-events" element={<EventListPage />} />
         <Route path="event/:eventId" element={<EventPage />} />
         <Route path="team" element={<TeamPage />} />
-        <Route path="commission" element={<CommissionPage />} />
+        <Route path="commission/:commissionId" element={<CommissionPage />} />
         <Route path="materialhelp" element={<MaterialHelpPage />} />
       </Routes>
     </BrowserRouter>
