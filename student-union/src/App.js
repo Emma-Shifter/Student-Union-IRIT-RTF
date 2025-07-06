@@ -13,7 +13,7 @@ function App() {
       <Routes>
         <Route path="*" element={<MainPage />} />
         <Route path="our-events" element={<EventListPage />} />
-        <Route path="event" element={<EventPage />} />
+        <Route path="event/:eventId" element={<EventPage />} />
         <Route path="team" element={<TeamPage />} />
         <Route path="commission" element={<CommissionPage />} />
         <Route path="materialhelp" element={<MaterialHelpPage />} />

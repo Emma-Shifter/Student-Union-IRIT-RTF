@@ -3,16 +3,8 @@ import npDesc from '../img/np-desc.png';
 import btnHero from '../img/event-btn.svg';
 import btnArrow from '../img/btn-arrow.svg';
 import Masonry from 'react-masonry-css';
-
-const importAll = (r) => r.keys().map(r);
-const images = importAll(require.context('../img/np', false, /\.(png|jpe?g|svg)$/));
-
-const data = {
-    title: 'НЕДЕЛЯ ПЕРВОКУРСНИКОВ',
-    image: images,
-    desc1: 'Серия из нескольких мероприятий, направленных на знакомство первокурсников друг с другом, внеучебной жизнью, нашей командой и институтом.',
-    desc2: 'Каждый год неделя первокурсников проходит в разных тематиках, но неизменным остается одно: она приносит яркие эмоции и остается в памяти участников надолго.'
-}
+import { useParams } from 'react-router-dom';
+import {eventsList} from "../data";
 
 const breakpointColumnsObj = {
             default: 3,
@@ -21,6 +13,9 @@ const breakpointColumnsObj = {
         };
 
 export default function EventPage(props) {
+    const { eventId } = useParams();  // Получаем eventId из URL
+    const data = eventsList.find(item => item.id === eventId);
+
     return (
         <div className="App EventPage">
             <Header></Header>
@@ -34,9 +29,9 @@ export default function EventPage(props) {
 
             <div className="event-desc">
                 <div>
-                    <p>{data.desc1}</p>
+                    <p>{data.desc}</p>
                     <br></br>
-                    <p>{data.desc2}</p>
+                    <p>{data.descAdd}</p>
                 </div>
                 <div className="event-desc-img">
                     <img src={npDesc}></img>
@@ -44,7 +39,7 @@ export default function EventPage(props) {
             </div>
 
             <Masonry breakpointCols={breakpointColumnsObj} className="masonry-grid" columnClassName="masonry-grid-column">
-                {data.image.map((img, index) => (
+                {data.eImages.map((img, index) => (
                     <div key={index} className="masonry-item">
                         <img src={img} alt={img.alt} />
                     </div>

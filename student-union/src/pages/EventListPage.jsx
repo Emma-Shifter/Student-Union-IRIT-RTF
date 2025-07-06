@@ -1,6 +1,7 @@
 import EventCard from "../components/event-card";
 import Footer from "../components/footer";
 import Header from "../components/header";
+import { Link } from 'react-router-dom';
 // import ImageSlider from "../components/image-slider";
 import {eventsList, sliderList} from "../data";
 
@@ -16,7 +17,9 @@ export default function MainPage(props) {
 
             <div className="events-list-container">
                 {eventsList.map((elem) => (
-                    <EventCard cardClass={elem.cardClass} title={elem.title} desc={elem.desc} image={elem.image}></EventCard>
+                    <Link to={`/event/${elem.id}`} style={{ textDecoration: "none", color: "inherit" }}>
+                        <EventCard cardClass={elem.cardClass} title={elem.title} desc={elem.desc} image={elem.image}></EventCard>
+                    </Link>
                 ))}
             </div>
 
