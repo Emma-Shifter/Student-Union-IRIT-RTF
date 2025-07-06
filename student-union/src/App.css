@@ -128,3 +128,99 @@ h1 {
 .slick-center {
   opacity: 0 !important;
 }
+
+/*Страница мероприятия*/
+.event-hero {
+  margin-top: 46px;
+  background: 
+    linear-gradient(
+      to bottom, 
+      rgba(0, 0, 0, 0.4) 0%, 
+      rgba(0, 0, 0, 0.3) 100%
+    ),
+    url('./img/np-hero.png') center/cover;
+  padding-top: 325px;
+  padding-bottom: 55px;
+  border-radius: 60px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 195px;
+}
+.hero-title {
+  font-size: 96px;
+  font-weight: 950;
+  color: #FFFFFF;
+  margin: 0;
+  padding: 0;
+}
+
+.event-desc {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+  align-items: center;
+}
+.event-desc p {
+  font-weight: 600;
+  font-size: 32px;
+  text-align: start;
+  color: #28292C;
+}
+.event-desc > div > img {
+  width: 100%;
+  height: auto;
+  border-radius: 30px;
+  object-fit: cover;
+}
+.event-desc-img {
+  height: 400px;
+  overflow: hidden;
+  border-radius: 30px;
+}
+
+.masonry-grid {
+  display: flex;
+  margin-left: -16px;
+  width: auto;
+  margin-top: 155px;
+  margin-bottom: 100px;
+}
+.masonry-grid-column {
+  padding-left: 16px;
+  background-clip: padding-box;
+}
+.masonry-item img {
+  width: 100%;
+  border-radius: 15px;
+  margin-bottom: 16px;
+}
+
+.VK-link-container {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  align-items: center;
+}
+.VK-link-container > p {
+  font-size: 60px;
+  font-weight: 900;
+  color: #2B2C2F;
+}
+.VK-link-container > p > span {
+  color: #1941D1;
+}
+.VK-link-container-BTN {
+  display: flex;
+  flex-direction: row;
+  color: #FFFFFF;
+  font-size: 48px;
+  font-weight: 800;
+  align-items: center;
+  background-color: #1941D1;
+  padding: 38px 50px;
+  border-radius: 38px;
+  width: fit-content;
+  gap: 20px;
+}
+

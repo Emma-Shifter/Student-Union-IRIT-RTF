@@ -1,7 +1,7 @@
 import EventCard from "../components/event-card";
 import Footer from "../components/footer";
 import Header from "../components/header";
-import ImageSlider from "../components/image-slider";
+// import ImageSlider from "../components/image-slider";
 import {eventsList, sliderList} from "../data";
 
 export default function MainPage(props) {
@@ -13,6 +13,7 @@ export default function MainPage(props) {
                 items={sliderList} 
                 emptyMessage="Нет оплаченных занятий за этот период"
             /> */}
+
             <div className="events-list-container">
                 {eventsList.map((elem) => (
                     <EventCard cardClass={elem.cardClass} title={elem.title} desc={elem.desc} image={elem.image}></EventCard>
