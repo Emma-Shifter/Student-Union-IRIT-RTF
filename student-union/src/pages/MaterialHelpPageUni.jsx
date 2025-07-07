@@ -11,6 +11,8 @@ import map from '../img/mp/map.svg';
 import vk from '../img/mp/vk.svg';
 import tg from '../img/mp/tg.svg';
 import phone from '../img/mp/phone.svg';
+import star from '../img/mp/star.svg';
+import arrow from '../img/mp/arrow-right.svg';
 
 const breakpointColumnsObj = {
             default: 2,
@@ -34,7 +36,7 @@ export default function MaterialHelpPageUni(props) {
                         <img src={wallet}></img>
                         <div>
                             <p className="info-side-elem-title">Минимальная сумма для подачи заявления</p>
-                            <p className="info-side-elem-digits">10000 рублей</p>
+                            <p className="info-side-elem-digits">10 000 рублей</p>
                             <p className="info-side-elem-desc">Материальная помощь компенсирует от 10000 рублей</p>
                         </div>
                     </div>
@@ -42,9 +44,9 @@ export default function MaterialHelpPageUni(props) {
                         <img src={alert}></img>
                         <div>
                             <p className="info-side-elem-title">Обратите внимание</p>
-                            <p className="info-side-elem-desc">Нельзя подавать заявление на материальную помощь в комиссию института и университета одновременно по одному основанию
-Иностранным студентам при подаче на матпомощь требуется предоставить копии всех страниц каждого из прикладываемых документов
-Все документы, прилагаемые к заявлению, должны быть получены или реализованы в течение текущего учебного года</p>
+                            <p className="info-side-elem-desc">Нельзя подавать заявление на материальную помощь в комиссию института и университета одновременно  <span className="info-side-elem-desc-imp">по одному основанию</span>
+<br></br>Иностранным студентам при подаче на матпомощь требуется предоставить  <span className="info-side-elem-desc-imp">копии всех страниц</span> каждого из прикладываемых документов
+В<br></br>се документы, прилагаемые к заявлению, должны быть получены или реализованы в течение <span className="info-side-elem-desc-imp">текущего учебного года</span></p>
                         </div>
                     </div>
                     <div className="info-side-elem">
@@ -119,6 +121,55 @@ export default function MaterialHelpPageUni(props) {
                         <MPReason className="masonry-item" title={elem.title} docs={elem.docs} etc={elem.etc}></MPReason>
                     ))
                 }
+                <div className="MPReason spec-reason">
+                                    <h3>Студенты, нуждающиеся в материальной поддержке в связи с дорогостоящим проездом до места жительства (прописки), а также до места жительства родителей</h3>
+                                    <div className='etc-container'>
+                                        <img src={star} alt="star" />
+                                        <p>Возмещается часть стоимости проезда</p>
+                                    </div>
+                                    <div className='reason-info'>
+                                        <div className="category-reason-container">
+                                            <div className="category-reason-container-left">
+                                                <p>для граждан РФ:</p>
+                                                <div className='reasons-container'>
+                                                    <img src={arrow}></img>
+                                                    <p>копия основной страницы паспорта</p>
+                                                </div>
+                                                <div className='reasons-container'>
+                                                    <img src={arrow}></img>
+                                                    <p>копия паспорта с регистрацией</p>
+                                                </div>
+                                                <div className='reasons-container'>
+                                                    <img src={arrow}></img>
+                                                    <p>оригиналы билетов (РДЖ/автобус)</p>
+                                                </div>
+                                                <div className='reasons-container'>
+                                                    <img src={arrow}></img>
+                                                    <p>электронный билет + посадочный талон (самолет)</p>
+                                                </div>
+                                            </div>
+                                            <div className="category-reason-container-right">
+                                                <p>для иностранных граждан </p>
+                                                <div className='reasons-container'>
+                                                    <img src={arrow}></img>
+                                                    <p>копия всех страниц паспорта, загранпаспорта</p>
+                                                </div>
+                                                <div className='reasons-container'>
+                                                    <img src={arrow}></img>
+                                                    <p>копия миграционной карты</p>
+                                                </div>
+                                                <div className='reasons-container'>
+                                                    <img src={arrow}></img>
+                                                    <p>оригиналы билетов (РДЖ/автобус)</p>
+                                                </div>
+                                                <div className='reasons-container'>
+                                                    <img src={arrow}></img>
+                                                    <p>электронный билет + посадочный талон (самолет)</p>
+                                                </div>
+                                            </div>                            
+                                        </div>
+                                    </div>
+                                </div>
             </Masonry>
         </div>
     )

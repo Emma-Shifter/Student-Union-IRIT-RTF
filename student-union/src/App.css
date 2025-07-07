@@ -425,7 +425,8 @@ h1 {
 /* Страница МП */
 .MaterialHelpPage > h1, 
 .MaterialHelpPageInst > h1,
-.MaterialHelpPageUni > h1 {
+.MaterialHelpPageUni > h1,
+.MaterialHelpPageContract > h1 {
   text-transform: uppercase;
   font-weight: 900;
   text-align: start;
@@ -434,7 +435,8 @@ h1 {
 }
 .MaterialHelpPage > p,
 .MaterialHelpPageInst > p,
-.MaterialHelpPageUni > p {
+.MaterialHelpPageUni > p,
+.MaterialHelpPageContract > p {
   align-self: flex-start;
   font-size: 32px;
   font-weight: 600;
@@ -443,7 +445,8 @@ h1 {
   margin-bottom: 63px;
 }
 .MaterialHelpPageInst > p,
-.MaterialHelpPageUni > p {
+.MaterialHelpPageUni > p,
+.MaterialHelpPageContract > p {
   margin-bottom: 22px;
 } 
 
@@ -536,7 +539,9 @@ h1 {
   background-color: #FFFFFF;
   margin-bottom: 50px;
 }
-.MPReason > h3 {
+.MPReason > h3,
+.category-reason-container-right > p,
+.category-reason-container-left > p {
   font-weight: 800;
   font-size: 24.65px;
   text-align: start;
@@ -544,7 +549,9 @@ h1 {
   line-height: 120%;
 }
 .MPReason > .reason-info > .reasons-container,
-.MPReason > .reason-info > .etc-container {
+.MPReason > .reason-info > .etc-container,
+.MPReason > .reason-info .reasons-container,
+.spec-reason .etc-container {
   display: flex;
   flex-direction: row;
   gap: 12px;
@@ -560,12 +567,14 @@ h1 {
   flex-direction: column;
 }
 .MaterialHelpPageInst > .masonry-grid,
-.MaterialHelpPageUni > .masonry-grid {
+.MaterialHelpPageUni > .masonry-grid,
+.MaterialHelpPageContract > .masonry-grid{
   gap: 50px;
   margin: 0;
 }
 .MaterialHelpPageInst .masonry-grid-column:first-child,
-.MaterialHelpPageUni .masonry-grid-column:last-child {
+.MaterialHelpPageUni .masonry-grid-column:last-child, 
+.MaterialHelpPageContract .masonry-grid-column:first-child {
   width: 73% !important;
 }
 
@@ -702,4 +711,22 @@ h1 {
 }
 .alert-container > div > p:first-child {
   font-weight: 950;
+}
+
+.spec-reason .category-reason-container {
+  display: flex;
+  flex-direction: row;
+}
+.category-reason-container-left,
+.category-reason-container-right {
+  display: flex;
+  flex-direction: column;
+}
+.spec-reason > .etc-container {
+  margin-bottom: 14px;
+}
+
+.info-side-elem-desc-imp {
+  color: #1941D1;
+  font-weight: 800;
 }

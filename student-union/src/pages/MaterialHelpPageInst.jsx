@@ -35,14 +35,14 @@ export default function MaterialHelpPageInst(props) {
                         <div>
                             <p className="info-side-elem-title">Минимальная сумма для подачи заявления</p>
                             <p className="info-side-elem-digits">2800 рублей</p>
-                            <p className="info-side-elem-desc">Материальная помощь компенсирует от 2800 до 10000 рублей (без учета НДФЛ*), даже если сумма в чеках более 10000 рублей</p>
+                            <p className="info-side-elem-desc">Материальная помощь компенсирует от 2800 до 10000 рублей (<span className="info-side-elem-desc-imp">без учета НДФЛ*</span>), даже если сумма в чеках более 10000 рублей</p>
                         </div>
                     </div>
                     <div className="info-side-elem">
                         <img src={alert}></img>
                         <div>
                             <p className="info-side-elem-title">Обратите внимание</p>
-                            <p className="info-side-elem-desc">Все документы, прилагаемые к заявлению, должны быть получены или реализованы в течение текущего учебного года</p>
+                            <p className="info-side-elem-desc">Все документы, прилагаемые к заявлению, должны быть получены или реализованы в течение <span className="info-side-elem-desc-imp">текущего учебного года</span></p>
                         </div>
                     </div>
                     <div className="info-side-elem">

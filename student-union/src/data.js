@@ -13,6 +13,7 @@ const importAll = (r) => r.keys().map(r);
 const imagesNP = importAll(require.context('./img/np', false, /\.(png|jpe?g|svg)$/));
 const imagesPR = importAll(require.context('./img/pr', false, /\.(png|jpe?g|svg)$/)); //председатель
 
+
 const sliderList = [
     {image: simage01},
     {image: simage02},
@@ -90,6 +91,8 @@ const commissionList = [
                 contacts: {
                     phone: '+7 908 071 3460',
                     vk: 'https://vk.com/lads_mart',
+                    vk_name: 'ksushasolnyshko',
+                    tg_name: '@ksushasolnyshko',
                     tg: 'https://t.me/o0pSis'
                 }
             }
@@ -112,6 +115,8 @@ const commissionList = [
                 fio: 'Попова Ксюша',
                 contacts: {
                     tg: 'https://t.me/ksushasolnyshko',
+                    vk_name: 'ksushasolnyshko',
+                    tg_name: '@ksushasolnyshko',
                     vk: 'https://vk.com/ksushasolnyshko',
                     phone: '+7 951 477 90 73'
                 }
@@ -134,6 +139,8 @@ const commissionList = [
                 contacts: {
                     phone: '+7 922 120 0429',
                     vk: 'https://vk.com/ivancrosoft',
+                    vk_name: 'ivancrosoft',
+                    tg_name: '@ivancrosoft',
                     tg: 'https://t.me/ivancrosoft'
                 }
             }
@@ -156,6 +163,8 @@ const commissionList = [
                 contacts: {
                     phone: '+7 999 584 9288',
                     vk: 'https://vk.com/lizochek_rw',
+                    vk_name: 'lizochek_rw',
+                    tg_name: '@LIZOCHEK_RW',
                     tg: 'https://t.me/LIZOCHEK_RW'
                 }
             }
@@ -179,6 +188,8 @@ const commissionList = [
                 contacts: {
                     phone: '+7 923 030 8818',
                     vk: 'https://vk.com/po_katyusha',
+                    vk_name: 'po_katyusha',
+                    tg_name: '@poktsh',
                     tg: 'https://t.me/poktsh'
                 }
             }
@@ -202,6 +213,8 @@ const commissionList = [
                 contacts: {
                     phone: '+7 982 638 4143',
                     vk: 'https://vk.com/darianokhrinaa',
+                    vk_name: 'darianokhrinaa',
+                    tg_name: '@darianokhrina',
                     tg: 'https://t.me/darianokhrina'
                 }
             }
@@ -225,6 +238,8 @@ const commissionList = [
                 contacts: {
                     phone: '+7 919 302 3982',
                     vk: 'https://vk.com/mrmogo',
+                    vk_name: 'mrmogo',
+                    tg_name: '@mrmogo',
                     tg: 'https://t.me/mrmogo'
                 }
             }
@@ -247,6 +262,8 @@ const commissionList = [
                 contacts: {
                     phone: '+7 912 615 1871',
                     vk: 'https://vk.com/hywyh',
+                    vk_name: 'hywyh',
+                    tg_name: '@hywwyh',
                     tg: 'https://t.me/hywwyh'
                 }
             }
@@ -270,7 +287,7 @@ const commissionList = [
                 fio: 'Гареев Роман',
                 contacts: {
                     tg: 'https://t.me/yupizuko',
-                    tg_name: ' @yupizuko',
+                    tg_name: '@yupizuko',
                     vk: 'https://vk.com/avepsam',
                     vk_name: 'avepsam',
                     phone: '+7 962 524 89 50'
@@ -297,6 +314,8 @@ const commissionList = [
                 contacts: {
                     phone: '+7 993 775 2605',
                     vk: 'https://vk.com/emma_shifter',
+                    tg_name: '@emma_shifter',
+                    vk_name: 'emma_shifter',
                     tg: 'https://t.me/emma_shifter'
                 }
             }
@@ -374,30 +393,44 @@ const mpUniList = [
 
 const mpContractList = [
     {
-        title: 'Студенты, вступившие в брак/ставшие родителями в течение последних 12 месяцев',
-        docs: ['Документ, соответствующий ситуации'],
-        etc: ['Выплачивается единоразово']
+        title: 'Студенты всех федеральных льготных категорий, из многодетных семей',
+        docs: ['документы, соответствующие ситуации'],
+        etc: []
     },   
     {
-        title: 'Студенты, прошедшие дорогостоящее лечение в течение учебного года, включая стоматологическое лечение в МСЧ УрФУ',
+        title: 'Студенты, прошедшие дорогостоящее лечение, включая стоматологическое лечение в МСЧ УрФУ, санитарно-курортное лечение, а также вставшие на учет в медучреждениях на сроке беременности от четырех месяцев',
         docs: ['оригиналы чеков на покупку лекарств и/или оплату процедур', 'заключение врача (диагноз, курс лечения, рецепты)', 'копия договора на окозание платных медицинских услуг'],
         etc: ['Не компенсируются затраты на косметологические услуги, операции по коррекции зрения, платные медосмотры и медкомиссии; отбеливание и протезирование зубов, установление брекетов']
-    }, 
-    {
-        title: 'Студенты, имеющие на иждивении несовершеннолетнего ребенка',
-        docs: ['Копия свидетельства о рождении ребенка'],
-        etc: []
-    }, 
-    {
-        title: 'Студенты, потерявшие родителя, супруга или ребенка в течение последних 12 месяцев',
-        docs: ['Копия свидетельства о смерти '],
-        etc: ['Выплачивается единоразово']
     },
     {
-        title: 'Студенты, получающие пенсию по потере кормильца, размер которой не превышает 1,3 прожиточного минимума, установленногов Свердловской области',
-        docs: ['справка о назначенных пенсиях и социальных выплатах, выданная органом, выплачивающим пенсию '],
+        title: 'Студенты, нуждающиеся в материальной поддержке в связи с покупкой дорогостоящей демисезонной и зимней  одежды стоимостью до 20 000 рублей и обуви стоимостью до 15 000 рублей в течение учебного года',
+        docs: ['оригиналы кассовых и товарных чеков с QR-кодом'],
+        etc: ['Матпомощь возвращается только за верхнюю одежду и обувь. За футболки, блузки и т.п. матпомощь не возращается']
+    },
+    {
+        title: 'Студенты, имеющие родителей-инвалидов I или II группы или пенсионеров',
+        docs: ['соответствующее удостоверение родителя'],
+        etc: []
+    },
+    {
+        title: 'Студенты, нуждающиеся в материальной поддержке в связи с затруднительным материальным положением по иным причинам (доходы семьи ниже прожиточного минимума, развод родителей и т.п)',
+        docs: ['документы, соответствующие ситуации'],
+        etc: []
+    },
+    {
+        title: 'Студенты, проживающие в общежитии УрФУ',
+        docs: ['копия договора найма и ордера', 'чек об оплате'],
+        etc: []
+    },    
+    {
+        title: 'Студенты, потерявшие кормильца менее двух лет назад',
+        docs: ['копия свидетельства о регистрации смерти', 'документ, подтверждающий родство'],
+        etc: []
+    },    
+    {
+        title: 'Студенты, вступившие в брак менее полугода назад',
+        docs: ['копия свидетельства о заключении брака'],
         etc: []
     }
-
 ]
 export {eventsList, sliderList, commissionList, mpInstList, mpUniList, mpContractList};
