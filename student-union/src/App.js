@@ -6,6 +6,9 @@ import EventListPage from './pages/EventListPage';
 import TeamPage from './pages/TeamPage';
 import CommissionPage from './pages/CommissionPage';
 import MaterialHelpPage from './pages/MaterialHelpPage'
+import MaterialHelpPageUni from './pages/MaterialHelpPageUni';
+import MaterialHelpPageInst from './pages/MaterialHelpPageInst';
+import MaterialHelpPageContract from './pages/MaterialHelpPageContract';
 
 function App() {
   return (
@@ -17,6 +20,9 @@ function App() {
         <Route path="team" element={<TeamPage />} />
         <Route path="commission/:commissionId" element={<CommissionPage />} />
         <Route path="materialhelp" element={<MaterialHelpPage />} />
+        <Route path="materialhelp/uni" element={<MaterialHelpPageUni />} />
+        <Route path="materialhelp/inst" element={<MaterialHelpPageInst />} />
+        <Route path="materialhelp/contract" element={<MaterialHelpPageContract />} />
       </Routes>
     </BrowserRouter>
   );
