@@ -11,6 +11,7 @@ import simage03 from './img/s-image-03.png'
 
 const importAll = (r) => r.keys().map(r);
 const imagesNP = importAll(require.context('./img/np', false, /\.(png|jpe?g|svg)$/));
+const imagesPR = importAll(require.context('./img/pr', false, /\.(png|jpe?g|svg)$/)); //председатель
 
 const sliderList = [
     {image: simage01},
@@ -263,13 +264,15 @@ const commissionList = [
             'Связь с дирекцией института и выполнение поручений от нее',
             'Проведение общих планерок и стратегических сессий команды'
         ],
-        images: [],
+        images: imagesPR,
         people: [
             {
                 fio: 'Гареев Роман',
                 contacts: {
                     tg: 'https://t.me/yupizuko',
+                    tg_name: ' @yupizuko',
                     vk: 'https://vk.com/avepsam',
+                    vk_name: 'avepsam',
                     phone: '+7 962 524 89 50'
                 }
             }
