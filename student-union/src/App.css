@@ -298,7 +298,7 @@ h1 {
 }
 
 /* Страница отдельной комиссии */
-.CommissionPage h1 {
+.CommissionPage > h1 {
   text-transform: uppercase;
   font-weight: 900;
 }
@@ -420,5 +420,104 @@ h1 {
 .CM-image-3 > img {
   width: 490px;
   border-radius: 15px;
+}
+
+/* Страница МП */
+.MaterialHelpPage > h1 {
+  text-transform: uppercase;
+  font-weight: 900;
+  text-align: start;
+  margin: 0;
+  padding: 0;
+}
+.MaterialHelpPage > p {
+  align-self: flex-start;
+  font-size: 32px;
+  font-weight: 600;
+  text-align: start;
+  width: 60%;
+  margin-bottom: 63px;
+}
+
+.mp-elem-0 {
+  padding-top: 28px;
+  padding-left: 220px; 
+  background-image: url(./img/mp-elem-0.svg);
+  background-repeat: no-repeat;
+}
+.mp-elem-1 {
+  padding-top: 28px;
+  padding-left: 95px; 
+  background-image: url(./img/mp-elem-1.svg);
+  background-repeat: no-repeat;
+}
+.mp-elem-2 {
+  padding-top: 28px;
+  padding-left: 30px; 
+  background-image: url(./img/mp-elem-2.svg);
+  background-repeat: no-repeat;
+  width: 507px;
+}
+.mp-elem-2 > .PartOfTeam > p {
+  width: 50%;
+}
+.mp-elem-container {
+  display: flex;
+  min-height: 359px;
+  width: 100%;
+  flex-direction: row;
+}
+.mp-elem-0 > .PartOfTeam,
+.mp-elem-1 > .PartOfTeam,
+.mp-elem-2 > .PartOfTeam {
+  background-image: url(./img/mp-POT-bg.svg);
+}
+.mp-elem-0 > .PartOfTeam:hover,
+.mp-elem-1 > .PartOfTeam:hover,
+.mp-elem-2 > .PartOfTeam:hover {
+  background-image: url(./img/mp-POT-bg-hover.svg);
+}
+
+.MaterialHelpPage > .mp-elem-0-text {
+  top: 697px;
+  left: 120px;
+  font-size: 40px;
+  font-weight: 700;
+  position: absolute;
+  display: block;
+  margin: 0;
+  width: fit-content;
+  font-style: italic;
+}
+.MaterialHelpPage > .mp-elem-1-text {
+  top: 811px;
+  left: 607px;
+  font-size: 40px;
+  font-weight: 700;
+  position: absolute;
+  display: block;
+  margin: 0;
+  font-style: italic;
+  width: fit-content;
+}
+.MaterialHelpPage > .mp-elem-2-text {
+  top: 810px;
+  left: 1160px;
+  font-size: 40px;
+  font-weight: 700;
+  position: absolute;
+  display: block;
+  font-style: italic;
+  width: fit-content;
+  margin: 0;
+}
+.mp-elem-0:hover { 
+  background-image: url(./img/mp-elem-0-hover.svg);
+}
+.mp-elem-1:hover {
+  background-image: url(./img/mp-elem-1-hover.svg);
+}
+.mp-elem-2:hover {
+  background-image: url(./img/mp-elem-2-hover.svg);
 }
 
