@@ -13,6 +13,7 @@ import tg from '../img/mp/tg.svg';
 import phone from '../img/mp/phone.svg';
 import star from '../img/mp/star.svg';
 import arrow from '../img/mp/arrow-right.svg';
+import Footer from "../components/footer";
 
 const breakpointColumnsObj = {
             default: 2,
@@ -171,6 +172,7 @@ export default function MaterialHelpPageUni(props) {
                                     </div>
                                 </div>
             </Masonry>
+            <Footer></Footer>
         </div>
     )
 }

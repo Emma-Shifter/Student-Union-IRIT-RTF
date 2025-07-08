@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom';
 import VKlogo from '../img/ss-vk.svg';
 import TGlogo from '../img/ss-tg.svg';
 import Phonelogo from '../img/ss-phone.svg';
+import Footer from '../components/footer';
 
 
 export default function CommissionPage(props) {
@@ -46,6 +47,7 @@ export default function CommissionPage(props) {
                     </div>
                 ))}
             </section>
+            <Footer></Footer>
         </div>
     )
 }

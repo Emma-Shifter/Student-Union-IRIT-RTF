@@ -33,6 +33,21 @@
   font-style: normal;
 }
 
+html, body {
+  height: 100%; /* Важно! */
+  margin: 0;
+}
+
+main {
+  flex: 1; /* Растягивает основной контент, выталкивая футер вниз */
+}
+
+#root { /* Или ваш основной контейнер */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Занимает всю высоту экрана */
+}
+
 p, h1, h2, h3 {
   margin: 0;
   padding: 0;
@@ -729,4 +744,58 @@ h1 {
 .info-side-elem-desc-imp {
   color: #1941D1;
   font-weight: 800;
+}
+
+/* Футер */
+.Footer {
+  background-image: url(./img/footer-bg.svg);
+  background-repeat: no-repeat;
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: auto;
+  margin-top: 100px;
+  display: flex;
+  flex-direction: row;
+  gap: 111px;
+  padding: 60px 165px 60px 60px;
+  text-align: start;
+}
+.footer-text {
+  color: #FFFFFF;
+  text-wrap: nowrap;
+}
+.contacts-container {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 41px 10px 0px;
+  gap: 36px;
+}
+.footer-social-links:last-child > img {
+  width: 87px;
+  height: 87px;
+}
+.footer-social-links:first-child > div {
+  display: block;
+}
+.footer-social-links.first-links {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+.footer-social-links.first-links > img {
+  width: 48px;
+  height: 48px;
+}
+
+.social-container {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-self: center;
+  margin-left: 42px;
+}
+.req-container {
+  align-self: end;
+  margin-right: 42px;
 }

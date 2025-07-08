@@ -22,7 +22,6 @@ export default function MainPage(props) {
                     </Link>
                 ))}
             </div>
-
             <Footer></Footer>
         </div>
     )

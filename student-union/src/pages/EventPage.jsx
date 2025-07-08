@@ -4,6 +4,7 @@ import btnHero from '../img/event-btn.svg';
 import btnArrow from '../img/btn-arrow.svg';
 import Masonry from 'react-masonry-css';
 import { useParams } from 'react-router-dom';
+import Footer from "../components/footer";
 import {eventsList} from "../data";
 
 const breakpointColumnsObj = {
@@ -53,6 +54,7 @@ export default function EventPage(props) {
                     <img src={btnArrow}></img>
                 </div>
             </div>
+            <Footer></Footer>
         </div>
     )
 }

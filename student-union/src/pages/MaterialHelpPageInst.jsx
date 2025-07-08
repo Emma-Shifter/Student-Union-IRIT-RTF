@@ -11,6 +11,7 @@ import map from '../img/mp/map.svg';
 import vk from '../img/mp/vk.svg';
 import tg from '../img/mp/tg.svg';
 import phone from '../img/mp/phone.svg';
+import Footer from "../components/footer";
 
 const breakpointColumnsObj = {
             default: 2,
@@ -118,6 +119,7 @@ export default function MaterialHelpPageInst(props) {
                     ))
                 }
             </Masonry>
+            <Footer></Footer>
         </div>
     )
 }
