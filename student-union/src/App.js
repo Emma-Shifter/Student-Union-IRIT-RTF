@@ -9,6 +9,7 @@ import MaterialHelpPage from './pages/MaterialHelpPage'
 import MaterialHelpPageUni from './pages/MaterialHelpPageUni';
 import MaterialHelpPageInst from './pages/MaterialHelpPageInst';
 import MaterialHelpPageContract from './pages/MaterialHelpPageContract';
+import ProfPage from './pages/ProfPage';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Route path="materialhelp/uni" element={<MaterialHelpPageUni />} />
         <Route path="materialhelp/inst" element={<MaterialHelpPageInst />} />
         <Route path="materialhelp/contract" element={<MaterialHelpPageContract />} />
+        <Route path="profunion" element={<ProfPage />} />
       </Routes>
     </BrowserRouter>
   );

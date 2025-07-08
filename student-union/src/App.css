@@ -78,6 +78,7 @@ Link {
   flex-direction: row;
   align-items: center;
   gap: 790px;
+  text-wrap: nowrap;
   margin-bottom: 37px;
 }
 
@@ -448,7 +449,8 @@ h1 {
 .MaterialHelpPage > h1, 
 .MaterialHelpPageInst > h1,
 .MaterialHelpPageUni > h1,
-.MaterialHelpPageContract > h1 {
+.MaterialHelpPageContract > h1,
+.ProfPage > div > div > h1 {
   text-transform: uppercase;
   font-weight: 900;
   text-align: start;
@@ -458,7 +460,8 @@ h1 {
 .MaterialHelpPage > p,
 .MaterialHelpPageInst > p,
 .MaterialHelpPageUni > p,
-.MaterialHelpPageContract > p {
+.MaterialHelpPageContract > p,
+.ProfPage > div > div > p {
   align-self: flex-start;
   font-size: 32px;
   font-weight: 600;
@@ -1020,4 +1023,124 @@ h1 {
   display: flex;
   flex-direction: row;
   gap: 51px;
+}
+
+/* Профсоюз */
+.prof-plus-elem {
+  border: 4px solid #1941D1;
+  padding: 40px;
+  font-size: 24.65px;
+  font-weight: 800;
+  line-height: 120%;
+  border-radius: 20.54px;
+  margin-bottom: 50px;
+  text-align: start;
+}
+.prof-etc {
+  font-size: 26px;
+  font-weight: 600;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  margin-bottom: 50px;
+  width: 90%;
+  text-align: start;
+  gap: 12px
+}
+.ProfPage > div > div > p > a {
+  font-weight: 800;
+  color: #000000;
+}
+.prof-bonus-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.prof-bonus-container-right {
+  width: 671px;
+  height: 788px;
+  border-radius: 35px;
+  overflow: hidden;
+}
+.prof-bonus-container-right > img {
+  border-radius: 35px;
+  width: 100%;
+}
+.prof-bonus-container-left {
+  width: 60%;
+}
+.prof-bonus-container-left .prof-bonus-container-left-extra-text {
+  width: 94%;
+  margin-bottom: 46px;
+}
+
+.algo-step, .algo-text {
+  display: flex;
+  flex-direction: row;
+  gap: 27px;
+  font-weight: 700;
+  font-size: 27.01px;
+  align-items: center;
+}
+.algo-step {
+  margin-bottom: 35px;
+  width: 50%;
+  text-align: start;
+}
+.algo-text {
+  margin-bottom: 25px;
+}
+.ps-ad-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  text-wrap: nowrap;
+  gap: 50px;
+  align-self: center;
+  margin-bottom: 25px;
+}
+.mp-category {
+  margin-bottom: 0px;
+}
+.ps-full-ad-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.mansory-title {
+  line-height: 90%;
+  font-weight: 950;
+  font-size: 60px;
+  color: #1941D1;
+  text-align: start;
+  margin-bottom: 50px;
+}
+.contacts-side-elem {
+  margin-left: 193px;
+  margin-top: -41px;
+  margin-bottom: 121px;
+}
+.ProfPage .mansory-grid {
+  gap: 50px;
+}
+.ProfPage .masonry-grid-column {
+  padding: 0;
+}
+.ProfPage .masonry-grid-column:first-child {
+  margin-right: 50px;
+}
+.ProfPage > .masonry-grid {
+  margin-top: 56px !important;
+}
+
+.ProfPage > .Footer .sub-title {
+  color: rgba(255, 255, 255, 0.5) !important;
+  font-size: 24px !important;
+  font-weight: 600 !important;
+  width: 100%;
+  margin: 0;
+}
+.ProfPage > .Footer .req-container {
 }
