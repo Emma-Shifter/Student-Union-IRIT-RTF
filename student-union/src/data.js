@@ -11,7 +11,17 @@ import simage03 from './img/s-image-03.png'
 
 const importAll = (r) => r.keys().map(r);
 const imagesNP = importAll(require.context('./img/np', false, /\.(png|jpe?g|svg)$/));
-const imagesPR = importAll(require.context('./img/pr', false, /\.(png|jpe?g|svg)$/)); //председатель
+const imagesPR = importAll(require.context('./img/pr', false, /\.(png|jpe?g|svg)$/)); 
+const imagesSMK = importAll(require.context('./img/smk', false, /\.(png|jpe?g|svg)$/)); 
+const imagesOMR = importAll(require.context('./img/omr', false, /\.(png|jpe?g|svg)$/)); 
+const imagesSPK = importAll(require.context('./img/spk', false, /\.(png|jpe?g|svg)$/)); 
+const imagesIK = importAll(require.context('./img/ik', false, /\.(png|jpe?g|svg)$/)); 
+const imagesUNK = importAll(require.context('./img/unk', false, /\.(png|jpe?g|svg)$/)); 
+const imagesASN = importAll(require.context('./img/asn', false, /\.(png|jpe?g|svg)$/)); 
+const imagesZHBK = importAll(require.context('./img/zhbk', false, /\.(png|jpe?g|svg)$/)); 
+const imagesTOP = importAll(require.context('./img/top', false, /\.(png|jpe?g|svg)$/)); 
+const imagesKMK = importAll(require.context('./img/kmk', false, /\.(png|jpe?g|svg)$/)); 
+const imagesPART = importAll(require.context('./img/part', false, /\.(png|jpe?g|svg)$/)); 
 
 
 const sliderList = [
@@ -72,6 +82,25 @@ const commissionList = [
         id: 'SMK',
         title: 'CМК',
         desc: 'Департамент по спортивно-массовой работе',
+        works: [
+            'Популяризация спорта и ЗОЖ среди студентов института',
+            'Поиск участников для выступления на универсиаде',
+            'Информирование студентов о спортивных стипендиях, помощь с попаданием в сборную',
+            'Организация спортивных мероприятий'
+        ],
+        images: imagesSMK,
+        people: [
+            {
+                fio: 'Живцов Максим',
+                contacts: {
+                    phone: '+7 909 098 8657',
+                    vk: 'https://vk.com/zhivtsov2000',
+                    vk_name: 'zhivtsov2000',
+                    tg_name: '@Vfrcbv1',
+                    tg: 'https://t.me/Vfrcbv1'
+                }
+            }
+        ]
     },
     {
         id: 'OMR',
@@ -84,7 +113,7 @@ const commissionList = [
             'Работа с профгруппоргами',
             'Сбор рабочей группы профоргом для проведения совместного мероприятия'
         ],
-        images: [],
+        images: imagesOMR,
         people: [
             {
                 fio: 'Мартемьянова Лада',
@@ -109,7 +138,7 @@ const commissionList = [
             'Ответы на вопросы студентов',
             'Обработка обращений в «Красную кнопку»'
         ],
-        images: [],
+        images: imagesSPK,
         people: [
             {
                 fio: 'Попова Ксюша',
@@ -132,7 +161,7 @@ const commissionList = [
             'Сбор оборудования для проведения мероприятий',
             'Подготовка фотозон для творческих выступлений и мероприятий'
         ],
-        images: [],
+        images: imagesTOP,
         people: [
             {
                 fio: 'Ипатов Иван',
@@ -156,7 +185,7 @@ const commissionList = [
             'Информирование студентов о процедуре заселения в общежитие',
             'Ответы на вопросы студентов'
         ],
-        images: [],
+        images: imagesZHBK,
         people: [
             {
                 fio: 'Рявкина Лиза',
@@ -181,7 +210,7 @@ const commissionList = [
             'Проведение мероприятий от комиссии, таких как «Литературный вечер» и «МК от КМК»',
             'Сбор команды и подготовка номера для выступления на Бенефисе УрФУ'
         ],
-        images: [],
+        images: imagesKMK,
         people: [
             {
                 fio: 'Поварнина Катя',
@@ -206,7 +235,7 @@ const commissionList = [
             'Ведение рейтинга наставников и награждение лучших по итогам работы',
             'Сбор рабочей группы наставников для проведения мероприятия'
         ],
-        images: [],
+        images: imagesASN,
         people: [
             {
                 fio: 'Нохрина Даша',
@@ -231,7 +260,7 @@ const commissionList = [
             'Ответы на вопросы студентов',
             'Поиск и привлечение организаторов научных мероприятий'
         ],
-        images: [],
+        images: imagesUNK,
         people: [
             {
                 fio: 'Овчинников Андрей',
@@ -255,7 +284,7 @@ const commissionList = [
             'Учет всех подарков и призов',
             'Поиск и подготовка призов на мероприятия'
         ],
-        images: [],
+        images: imagesPART,
         people: [
             {
                 fio: 'Даниелян Ашот',
@@ -307,7 +336,7 @@ const commissionList = [
             'Оформление и выпуск газеты «RTF news»',
             'Съемка и выпуск видеороликов для социальных сетей'
         ],
-        images: [],
+        images: imagesIK,
         people: [
             {
                 fio: 'Бахарева Настя',

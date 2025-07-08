@@ -5,9 +5,9 @@ import { Link } from 'react-router-dom';
 // import ImageSlider from "../components/image-slider";
 import {eventsList, sliderList} from "../data";
 
-export default function MainPage(props) {
+export default function EventListPage(props) {
     return (
-        <div className="App MainPage">
+        <div className="App EventListPage">
             <Header></Header>
             <h1>Наши мероприятия</h1>
             {/* <ImageSlider 
