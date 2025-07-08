@@ -6,11 +6,23 @@ import image05 from "./img/image-05.png";
 import image06 from "./img/image-06.png"; 
 
 import simage01 from './img/s-image-01.png';
-import simage02 from './img/s-image-02.png'
-import simage03 from './img/s-image-03.png'
+import simage02 from './img/s-image-02.png';
+import simage03 from './img/s-image-03.png';
+
+import npDesc from './img/np/np-desc.png';
+import npHero from './img/np/np-hero.png';
+import dpDesc from './img/dp/dp-desc.png';
+import dpHero from './img/dp/dp-hero.png';
+import hsaDesc from './img/hsa/hsa-desc.png';
+import hsaHero from './img/hsa/hsa-hero.png';
+import vsDesc from './img/vs/vs-desc.png';
+import vsHero from './img/vs/vs-hero.png';
+import ssaDesc from './img/hsa/hsa-desc.png';
+import ssaHero from './img/hsa/hsa-hero.png';
+import drDesc from './img/hsa/hsa-desc.png';
+import drHero from './img/hsa/hsa-hero.png';
 
 const importAll = (r) => r.keys().map(r);
-const imagesNP = importAll(require.context('./img/np', false, /\.(png|jpe?g|svg)$/));
 const imagesPR = importAll(require.context('./img/pr', false, /\.(png|jpe?g|svg)$/)); 
 const imagesSMK = importAll(require.context('./img/smk', false, /\.(png|jpe?g|svg)$/)); 
 const imagesOMR = importAll(require.context('./img/omr', false, /\.(png|jpe?g|svg)$/)); 
@@ -23,14 +35,38 @@ const imagesTOP = importAll(require.context('./img/top', false, /\.(png|jpe?g|sv
 const imagesKMK = importAll(require.context('./img/kmk', false, /\.(png|jpe?g|svg)$/)); 
 const imagesPART = importAll(require.context('./img/part', false, /\.(png|jpe?g|svg)$/)); 
 
+const imagesNP = importAll(require.context('./img/np', false, /\.(png|jpe?g|svg)$/));
+const imagesDP = importAll(require.context('./img/dp', false, /\.(png|jpe?g|svg)$/));
+const imagesVS = importAll(require.context('./img/vs', false, /\.(png|jpe?g|svg)$/));
+const imagesHSA = importAll(require.context('./img/hsa', false, /\.(png|jpe?g|svg)$/));
+const imagesSSA = importAll(require.context('./img/hsa', false, /\.(png|jpe?g|svg)$/));
+const imagesDR = importAll(require.context('./img/hsa', false, /\.(png|jpe?g|svg)$/));
 
 const sliderList = [
-    {image: simage01},
-    {image: simage02},
-    {image: simage03},
-    {image: simage01},
-    {image: simage02},
-    {image: simage03},
+    {
+        image: simage01,
+        title: 'Дебют первокурсников'
+    },
+    {
+        image: simage02,
+        title: 'Неделя первокурсников'
+    },
+    {
+        image: simage03,
+        title: 'Школа студенческого актива'
+    },
+    {
+        image: simage01,
+        title: 'Слет студенческого актива'
+    },
+    {
+        image: simage02,
+        title: 'Вселенная ИРИТ-РТФ'
+    },
+    {
+        image: simage03,
+        title: 'День радио'
+    },
 ]
 
 const eventsList = [
@@ -39,6 +75,8 @@ const eventsList = [
         title: 'НЕДЕЛЯ ПЕРВОКУРСНИКОВ',
         image: image01,
         eImages: imagesNP,
+        descImage: npDesc,
+        heroImage: npHero,
         descAdd: 'Каждый год неделя первокурсников проходит в разных тематиках, но неизменным остается одно: она приносит яркие эмоции и остается в памяти участников надолго.',
         desc: 'Серия из нескольких мероприятий, направленных на знакомство первокурсников друг с другом, внеучебной жизнью, нашей командой и институтом.'
     }, 
@@ -46,6 +84,9 @@ const eventsList = [
         id: 'dp',
         title: 'Дебют первокурсников',
         image: image02,
+        eImages: imagesDP,
+        descImage: dpDesc,
+        heroImage: dpHero,
         cardClass: "reversed",
         desc: 'Главный звездный момент каждого первокурсника — конкурс творческих номеров, в котором участвуют академические группы. Это шанс проявить себя и показать таланты на главной сцене Университета.'
     },
@@ -53,12 +94,18 @@ const eventsList = [
         id: 'vs',
         title: 'Вселенная ИРИТ-РТФ',
         image: image03,
+        descImage: vsDesc,
+        heroImage: vsHero,
+        eImages: imagesVS,
         desc: 'Мероприятие, посвященное дню рождения института. Оно является праздником для всех студентов, преподавателей и даже абитуриентов ИРИТ-РТФ.'
     },
     {
         id: 'hsa',
         title: 'Школа студенческого актива (ШСА)',
         image: image04,
+        eImages: imagesHSA,
+        descImage: hsaDesc,
+        heroImage: hsaHero,
         cardClass: "reversed",
         desc: 'Серия из четырех мероприятий для обучения и развития активистов. Участники заводят новые знакомства, получают знания о работе Союза студентов и навыки для организации собственных событий.'
     },
@@ -66,6 +113,9 @@ const eventsList = [
         id: 'ssa',
         title: 'Слет студенческого актива',
         image: image05,
+        eImages: imagesSSA,
+        descImage: ssaDesc,
+        heroImage: ssaHero,
         desc: 'Каждую весну 64 активных студента отправляются на Слет студенческого актива, где развивают командный дух, коммуникативные, профессиональныеи творческие навыки.'
     },
     {
@@ -73,6 +123,9 @@ const eventsList = [
         title: 'День радио',
         image: image06,
         cardClass: "reversed",
+        eImages: imagesDR,
+        descImage: drDesc,
+        heroImage: drHero,
         desc: 'Главный праздник радистов, традиционно отмечаемый 7 мая. Он наполнен воспоминаниями, теплыми встречамии традициями. Его любят и ждут студенты, преподаватели, сотрудники и выпускники.'
     }
 ]

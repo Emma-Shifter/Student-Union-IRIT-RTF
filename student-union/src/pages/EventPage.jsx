@@ -1,5 +1,4 @@
 import Header from "../components/header";
-import npDesc from '../img/np-desc.png';
 import btnHero from '../img/event-btn.svg';
 import btnArrow from '../img/btn-arrow.svg';
 import Masonry from 'react-masonry-css';
@@ -21,7 +20,9 @@ export default function EventPage(props) {
         <div className="App EventPage">
             <Header></Header>
             <h1>Наши мероприятия</h1>
-            <section className="event-hero">
+            <section style={{
+                background: `linear-gradient(rgba(0, 0, 0, 0.5)), url(${data.heroImage}) center/cover`
+                }} className="event-hero">
                 <h1 className="hero-title">{data.title}</h1>
                 <div>
                     <img src={btnHero}></img>
@@ -35,7 +36,7 @@ export default function EventPage(props) {
                     <p>{data.descAdd}</p>
                 </div>
                 <div className="event-desc-img">
-                    <img src={npDesc}></img>
+                    <img src={data.descImage}></img>
                 </div>
             </div>
 
