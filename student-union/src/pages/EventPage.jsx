@@ -50,10 +50,10 @@ export default function EventPage(props) {
 
             <div className="VK-link-container">
                 <p>Больше <span>фотографий</span> в нашей группе вк</p>
-                <div className="VK-link-container-BTN">
+                <a style={{ textDecoration: "none"}} href="https://vk.com/irit_rtf" className="VK-link-container-BTN">
                     <p>МЫ В ВК</p>
                     <img src={btnArrow}></img>
-                </div>
+                </a>
             </div>
             <Footer></Footer>
         </div>

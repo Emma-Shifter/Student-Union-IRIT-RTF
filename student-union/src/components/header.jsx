@@ -1,11 +1,12 @@
 import logo from '../img/logo.svg';
 import { Link } from 'react-router-dom';
 
-
 export default function Header(props) {
     return (
         <div className="Header">
-            <img src={props.newLogo || logo}></img>
+            <Link to={`/`} style={{ textDecoration: "none", color: "inherit" }}>
+                <img src={props.newLogo || logo}></img>
+            </Link>
             <div>
                 <Link to={`/our-events`} style={{ textDecoration: "none", color: "inherit" }}>
                     <a>мероприятия</a>

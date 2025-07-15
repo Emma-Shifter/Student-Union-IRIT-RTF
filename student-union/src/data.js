@@ -173,8 +173,8 @@ const commissionList = [
                 contacts: {
                     phone: '+7 908 071 3460',
                     vk: 'https://vk.com/lads_mart',
-                    vk_name: 'ksushasolnyshko',
-                    tg_name: '@ksushasolnyshko',
+                    vk_name: 'lads_mart',
+                    tg_name: '@o0pSis',
                     tg: 'https://t.me/o0pSis'
                 }
             }

@@ -7,6 +7,7 @@ import stars from '../img/main-stars.svg';
 import calendar from '../img/main-calendar.svg';
 import InterfaceBtn from "../components/InterfaceBtn";
 import logo from '../img/main-logo.svg';
+import { Link } from "react-router-dom";
 
 export default function MainPage(props) {
     return (
@@ -18,10 +19,10 @@ export default function MainPage(props) {
                     <p className="hero-text">Вливайся в активное сообщество ИРИТ-РТФ: мероприятия, проекты, возможности для роста!</p>
                     <p className="hero-tag">#вайбтвоегостуденчества</p>
                 </div>
-                <div className="VK-link-container-BTN">
+                <a style={{ textDecoration: "none", color: "inherit" }} href="https://vk.com/irit_rtf" className="VK-link-container-BTN">
                     <p>МЫ В ВК</p>
                     <img src={btnArrow}></img>
-                </div>
+                </a>
             </section>
             <section className="Info">
                 <h1>Кто мы?</h1>
@@ -78,10 +79,18 @@ export default function MainPage(props) {
             <section className="Buttons">
                 <h1>Обязательно загляни</h1>
                 <div className="interface-container">
-                    <InterfaceBtn title='Мероприятия' img={calendar}></InterfaceBtn>
-                    <InterfaceBtn title='Мат помощь' img={money}></InterfaceBtn>
-                    <InterfaceBtn title='Бонусы' img={stars}></InterfaceBtn>
-                    <InterfaceBtn title='Наша команда' img={people}></InterfaceBtn>
+                    <Link to={`/our-events`} style={{ textDecoration: "none", color: "inherit" }}>
+                        <InterfaceBtn title='Мероприятия' img={calendar}></InterfaceBtn>
+                    </Link>
+                    <Link to={`/materialhelp`} style={{ textDecoration: "none", color: "inherit" }}>
+                        <InterfaceBtn title='Мат помощь' img={money}></InterfaceBtn>
+                    </Link>
+                    <Link to={`/profunion`} style={{ textDecoration: "none", color: "inherit" }}>
+                        <InterfaceBtn title='Бонусы' img={stars}></InterfaceBtn>
+                    </Link>
+                    <Link to={`/team`} style={{ textDecoration: "none", color: "inherit" }}>
+                        <InterfaceBtn title='Наша команда' img={people}></InterfaceBtn>
+                    </Link>
                 </div>
             </section>
             <Footer></Footer>
