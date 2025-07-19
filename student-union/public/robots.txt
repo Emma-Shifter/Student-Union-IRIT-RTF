@@ -1,0 +1,7 @@
+User-agent: *
+Allow: /
+Disallow: /private/
+Disallow: /tmp/
+
+# Указываем карту сайта
+Sitemap: https://pbiritrtf.ru/sitemap.xml
