@@ -1217,3 +1217,197 @@ h1 {
   transform: translateY(-50%); /* Точное центрирование */
   padding: 0 20px; /* Защитные отступы */
 }
+
+.mobile-req-container {
+  display: none;
+}
+
+/*МОБИЛЬНАЯ ВЕРСИЯ*/
+
+@media (max-width: 430px) {
+  body {
+    font-size: 18px;
+  }
+
+  .MainPage > .Hero {
+    padding: 14px 16px;
+    background-image: url(../src/img/mobile-hero-bg.png);
+    background-size: cover;
+    width: auto;
+    height: auto;
+    background-position-y:bottom;
+    margin-bottom: 50px;
+  }
+
+  .MainPage > .Hero > .Header {
+    justify-content: space-between;
+    padding-bottom: 33px;
+    margin: 0;
+  }
+
+  .MainPage > .Hero > .Header > a > img {
+    width: 101.8px;
+    height: 45px;
+  }
+
+  .MainPage > .Hero > .Header > div {
+    display: none;
+  }
+
+  .MainPage > .Hero > .Header > .burger-btn {
+    display: block;
+  }
+
+  .MainPage .hero-info {
+    margin: 0px;
+  }
+
+  .MainPage .hero-title {
+    text-transform: lowercase;
+    font-size: 32px;
+    padding-bottom: 20px;
+    margin: 0;
+  }
+
+  .MainPage .hero-text,
+  .MainPage .hero-tag {
+    font-size: 18px;
+  }
+
+  .MainPage .VK-link-container-BTN {
+    font-size: 12.98px;
+    padding: 10px 15px;
+    margin-right: -9px;
+    margin-bottom: -11px;
+  }
+
+  .MainPage .VK-link-container-BTN img{
+    width: 16.6px;
+    height: 16.6px;
+  }
+
+
+  .MainPage .Info p {
+    font-size: 12px;
+    padding-right: 9px;
+    padding-left: 9px;
+    padding-bottom: 9px;
+
+  }
+
+  .MainPage .Info h1 {
+    font-size: 20px;
+  }
+
+  .MainPage .Info {
+    background-image: url(../src/img/mobile-main-us.png);
+    background-size: cover;
+    padding: 0px;
+    margin-bottom: 50px;
+  }
+
+  .MainPage .About h1, .MainPage .Digits h1, .MainPage .Buttons h1 {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+
+  .MainPage .Buttons h1 {
+    text-align: center;
+  }
+
+  .MainPage .About, .MainPage .Digits {
+    padding: 0;
+  }
+
+  .about-category {
+    margin-bottom: 4.5px;
+    font-size: 16px;
+  }
+
+  .about-text {
+    font-size: 14px;
+    text-align: left;
+  }
+
+  .about-info-container {
+    margin-bottom: 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .digits-0-container, 
+  .digits-1-container,
+  .digits-2-container {
+    background-size: cover;
+  }
+
+  .digits, .digits-2-container .digits {
+    font-size: 20px;
+  }
+  .digits-desc {
+    font-size: 12px;
+  }
+
+  .interface-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 20px;
+    column-gap: 3px;
+    margin-bottom: 50px;
+  }
+
+  .InterfaceBtn {
+    margin-bottom: 0;
+    background-image: url(../src/img/mobile-main-interface-bg.svg);
+    background-size: contain;
+    padding: 13px 67px 14px 16px;
+    width:auto ;
+  }
+  .InterfaceBtn > img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .InterfaceBtn > h3 {
+    font-size: 10px;
+  }
+
+  .sub-title {
+    font-size: 12px;
+  }
+
+  .footer-text {
+    font-size: 16px;
+  }
+  .Footer {
+    background-image: url(../src/img/mobile-footer-bg.png);
+    background-size: cover;
+    flex-direction: column;
+    padding: 28px 16px 28px;
+    gap: 10px;
+  }
+
+  .footer-social-links.first-links > img, .footer-social-links:last-child > img {
+    width: 30px;
+    height: 30px;
+  }
+
+  .MainPage .Footer {
+    margin: 0px;
+  }
+  .req-container {
+    display: none;
+  }
+
+  .social-container {
+    gap: 0.26vw;
+    align-self: self-start;
+    margin-left: 0;
+  }
+
+  .mobile-req-container {
+    display: block;
+    text-align: center;
+  }
+}

@@ -31,6 +31,9 @@ export default function Footer(props) {
                     <img src={tgFull}></img>
                 </div>
             </div>
+            <div className="mobile-req-container">
+                <p className='sub-title'>© 2025 Профбюро (Союз студентов)<br></br> ИРИТ-РТФ УрФУ</p>
+            </div>
         </div>
     )
 }
