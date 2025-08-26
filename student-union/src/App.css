@@ -1221,6 +1221,9 @@ h1 {
 .mobile-req-container {
   display: none;
 }
+.teamElem:nth-child(10) {
+  display: none;
+}
 
 /*МОБИЛЬНАЯ ВЕРСИЯ*/
 
@@ -1412,6 +1415,7 @@ h1 {
   }
 
   .Header {
+    width: 100%;
     justify-content: space-between;
   }
 
@@ -1501,5 +1505,44 @@ h1 {
 
   .masonry-grid-column {
     border-radius: 5px;
+  }
+
+  .TeamPage > p {
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .PartOfTeam {
+    padding: 4px 6px 4px;
+  }
+
+  .PartOfTeam h3{
+    font-size:16px;
+  }
+
+  .PartOfTeam > p {
+    line-height: 100%;
+    font-size: 13px;
+  }
+  
+  .team-container {
+    grid-template-columns: repeat(2, 156px);
+    row-gap: 10px;
+    column-gap: 16px;
+  }
+  .team-container > a, .lastTeamElem {
+    width: fit-content;
+    max-width: 90%;
+  }
+
+  .team-container-spec {
+    grid-template-columns: repeat(1, 190px);
+  }
+
+  .lastTeamElem:nth-child(2) {
+    display: none;
+  }
+  .teamElem:nth-child(10) {
+    display: block;
   }
 }
