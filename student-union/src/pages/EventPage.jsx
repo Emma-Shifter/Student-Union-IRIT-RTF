@@ -8,8 +8,8 @@ import {eventsList} from "../data";
 
 const breakpointColumnsObj = {
             default: 3,
-            1100: 2,
-            700: 1,
+            1100: 3,
+            700: 2,
         };
 
 export default function EventPage(props) {

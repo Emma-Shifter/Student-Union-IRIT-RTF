@@ -1274,14 +1274,14 @@ h1 {
     font-size: 18px;
   }
 
-  .MainPage .VK-link-container-BTN {
+  .MainPage .VK-link-container-BTN, .VK-link-container {
     font-size: 12.98px;
     padding: 10px 15px;
     margin-right: -9px;
     margin-bottom: -11px;
   }
 
-  .MainPage .VK-link-container-BTN img{
+  .MainPage .VK-link-container-BTN img, .VK-link-container img{
     width: 16.6px;
     height: 16.6px;
   }
@@ -1409,5 +1409,97 @@ h1 {
   .mobile-req-container {
     display: block;
     text-align: center;
+  }
+
+  .Header {
+    justify-content: space-between;
+  }
+
+  .Header > a > img{
+    width: 101.8px;
+    height: 45px;
+  }
+
+  .Header > div {
+    display: none;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .Header > .burger-btn-dark {
+    display: block;
+  }
+  .EventCard, .EventCard.reversed {
+    flex-direction: column;
+    margin-bottom: 50px;
+  }
+  .EventCard > div > h2 {
+    text-transform: uppercase;
+    font-size: 20px;
+  }
+  .EventCard > div > p {
+    font-size: 14px;
+  }
+  .EventCard > img {
+    width: 100%;
+  }
+  .Button.event-list {
+    font-size: 13.5px;
+    padding: 4px 10px;
+    border-radius: 12.67px;
+    align-items: center;
+  }
+  .Button.event-list > img {
+    width: 14px;
+    height: 14px;
+    margin-left: 4px;
+  }
+
+  .Footer {
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+
+  .MainPage.App {
+    padding: 0px;
+  }
+
+  .App {
+    padding: 16px 16px 0px;
+  }
+  
+  .slider-text {
+    padding: 0px;
+  }
+
+  .event-hero {
+    text-transform: uppercase;
+    padding: 63px 14px 10px;
+    gap: 28px;
+    margin-bottom: 50px;
+  }
+  .event-hero > div > img {
+    width: 22px;
+    height: 12.6px;
+  }
+  
+  .hero-title {
+    font-size: 18px;
+  }
+  .event-desc {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+  .event-desc p {
+    font-size: 14px;
+  }
+  .event-desc-img {
+    height: max-content;
+  }
+
+  .masonry-grid-column {
+    border-radius: 5px;
   }
 }

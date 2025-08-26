@@ -1,5 +1,6 @@
 import logo from '../img/logo.svg';
 import menu from '../img/menu.svg';
+import menuDark from '../img/menu-dark.svg';
 import { Link } from 'react-router-dom';
 
 export default function Header(props) {
@@ -25,6 +26,11 @@ export default function Header(props) {
             <div className='burger-btn'>
                 <a>
                     <img src={menu}></img>
+                </a>
+            </div>
+            <div className='burger-btn-dark'>
+                <a>
+                    <img src={menuDark}></img>
                 </a>
             </div>
         </div>
