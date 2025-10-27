@@ -1516,6 +1516,10 @@ h1 {
     padding: 4px 6px 4px;
   }
 
+  .team-container-spec .lastTeamElem .PartOfTeam {
+    background-image: url(./img/POT-bg-pred-mob.svg);
+  }
+
   .PartOfTeam h3{
     font-size:16px;
   }
