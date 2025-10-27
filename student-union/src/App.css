@@ -1606,4 +1606,113 @@ h1 {
   .works-container .social-container .social-phone a {
     font-size: 12px;
   }
+
+
+  .MaterialHelpPageInst > h1,
+  .MaterialHelpPageContract > h1,
+  .MaterialHelpPageUni > h1 {
+    margin-top: 30px;
+    line-height: 100%;
+  }
+  .MaterialHelpPageInst > p,
+  .MaterialHelpPageContract > p,
+  .MaterialHelpPageUni > p {
+    font-size: 12px;
+    width: 90%;
+    margin-bottom: 10px;
+  }
+  .mp-category > h2 {
+    font-size: 24px;
+  }
+  .mp-category > div {
+    font-size: 20px;
+    margin-bottom: 30px;
+  }
+  .info-contacts-container {
+    flex-direction: column-reverse;
+  }
+
+  .contact-container img {
+    width: 12px;
+  }
+  .contact-container a {
+    font-size: 10px;
+  }
+  .contacts-side-elem > div > p {
+    font-size: 16px;
+  } 
+  .contacts-side-elem-img {
+    width: 67.13924407958984px;
+    height: 67.13924407958984px;
+  }
+  .contacts-side-elem {
+    margin-left: 0px;
+  }
+  .info-side-container {
+    gap: 20px;
+  }
+  .info-side-elem img {
+    width: 26px;
+  }
+  .info-side-elem-title {
+    font-size: 20px;
+  }
+  .info-side-container {
+    width: 90%;
+  }
+  .info-side-elem-digits {
+    font-size: 18px;
+  }
+  .info-side-elem-desc {
+    font-size: 14px;
+  }
+
+  .alert-container {
+    flex-direction: column;
+    margin-top: 30px;
+  }
+  .alert-container > p {
+    font-size: 24px;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .alert-container div p {
+    font-size: 13px;
+    width: 90%;
+  }
+  .alert-container > div {
+    width: 100%;
+  }
+
+  .masonry-grid {
+    width: 100%;
+    gap: 0px;
+  }
+  .MaterialHelpPageInst .masonry-grid-column:first-child,
+  .MaterialHelpPageUni .masonry-grid-column:first-child,
+  .MaterialHelpPageContract .masonry-grid-column:first-child {
+    width: 125% !important;
+  }
+  .MPReason h3 {
+    font-size: 13px;
+  }
+  .reasons-container img,
+  .etc-container img{
+    width: 13px;
+  }
+  .reasons-container p,
+  .etc-container p {
+    font-size: 13px;
+    line-height: 100%;
+  }
+  .spec-reason .category-reason-container {
+    flex-direction: column;
+    gap: 6px;
+  }
+  .reasons-container {
+    margin-bottom: 2px;
+  }
+  .category-reason-container > div > p {
+    font-size: 14px;
+  }
 }
