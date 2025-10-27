@@ -1549,4 +1549,61 @@ h1 {
   .teamElem:nth-child(10) {
     display: block;
   }
+
+
+  .CM-image-0 {
+    top: 142px;
+    width: 140px;
+    height: 156.10248717863675px;
+  }
+  .CM-image-1 {
+    top: 140px;
+    left: 100px;
+    width: 101.84206702207577px;
+    height: 101.84206702207577px;
+  }
+  .CM-image-2 {
+    top: 107px;
+    width: 90.30506758349898px;
+    height: 129.71382371991973px;
+  }
+  .CM-image-3 {
+    top: 190px;
+    width: 109.22109900463361px;
+    height: 71.64238945829815px;
+  }
+  .works-container {
+    margin-top: 143px;
+    min-width: 90%; 
+  }
+  .works-container h2 {
+    font-size: 20px;
+  }
+  .works-container ul li {
+    font-size: 14px;
+  }
+  .works-container .fio {
+    margin-left: 30px;
+    font-size: 20px;
+  }
+  .works-container .desc {
+    margin-left: 30px;
+    font-size: 14px;
+  }
+  .works-container .social-container .social-vk,
+  .works-container .social-container .social-tg,
+  .works-container .social-container .social-phone {
+    margin-left: 30px;
+  }
+
+  .works-container .social-container .social-vk img,
+  .works-container .social-container .social-tg img,
+  .works-container .social-container .social-phone img {
+    width: 15px;
+  }
+  .works-container .social-container .social-vk a,
+  .works-container .social-container .social-tg a,
+  .works-container .social-container .social-phone a {
+    font-size: 12px;
+  }
 }
