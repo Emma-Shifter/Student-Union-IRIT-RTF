@@ -144,13 +144,13 @@ const commissionList = [
         images: imagesSMK,
         people: [
             {
-                fio: 'Живцов Максим',
+                fio: 'Сапарова Марал',
                 contacts: {
-                    phone: '+7 909 098 8657',
-                    vk: 'https://vk.com/zhivtsov2000',
-                    vk_name: 'zhivtsov2000',
-                    tg_name: '@Vfrcbv1',
-                    tg: 'https://t.me/Vfrcbv1'
+                    phone: '+7 912 202 7390',
+                    vk: 'https://vk.com/saparova892',
+                    vk_name: 'saparova892',
+                    tg_name: '@maral_saparovva',
+                    tg: 'https://t.me/maral_saparovva'
                 }
             }
         ]
@@ -169,13 +169,13 @@ const commissionList = [
         images: imagesOMR,
         people: [
             {
-                fio: 'Мартемьянова Лада',
+                fio: 'Габдуллина Карина',
                 contacts: {
-                    phone: '+7 908 071 3460',
-                    vk: 'https://vk.com/lads_mart',
-                    vk_name: 'lads_mart',
-                    tg_name: '@o0pSis',
-                    tg: 'https://t.me/o0pSis'
+                    phone: '+7 917 809 2095',
+                    vk: 'https://vk.com/ynerrea',
+                    vk_name: 'ynerrea',
+                    tg_name: '@ynerrea',
+                    tg: 'https://t.me/ynerrea'
                 }
             }
         ]
@@ -194,13 +194,13 @@ const commissionList = [
         images: imagesSPK,
         people: [
             {
-                fio: 'Попова Ксюша',
+                fio: 'Кравченко Света',
                 contacts: {
-                    tg: 'https://t.me/ksushasolnyshko',
-                    vk_name: 'ksushasolnyshko',
-                    tg_name: '@ksushasolnyshko',
-                    vk: 'https://vk.com/ksushasolnyshko',
-                    phone: '+7 951 477 90 73'
+                    tg: 'https://t.me/Cherezhnua',
+                    vk_name: 'otstantedaitepokushot',
+                    tg_name: '@Cherezhnua',
+                    vk: 'https://vk.com/otstantedaitepokushot',
+                    phone: '+7 967 851 74 73'
                 }
             }
         ]
@@ -217,13 +217,13 @@ const commissionList = [
         images: imagesTOP,
         people: [
             {
-                fio: 'Ипатов Иван',
+                fio: 'Сибагатов Тимур',
                 contacts: {
-                    phone: '+7 922 120 0429',
-                    vk: 'https://vk.com/ivancrosoft',
-                    vk_name: 'ivancrosoft',
-                    tg_name: '@ivancrosoft',
-                    tg: 'https://t.me/ivancrosoft'
+                    phone: '+7 905 350 29 00',
+                    vk: 'https://vk.com/crxstson',
+                    vk_name: 'crxstson',
+                    tg_name: '@crxstson',
+                    tg: 'https://t.me/crxstson'
                 }
             }
         ]
@@ -266,13 +266,13 @@ const commissionList = [
         images: imagesKMK,
         people: [
             {
-                fio: 'Поварнина Катя',
+                fio: 'Карпенкова Валерия',
                 contacts: {
-                    phone: '+7 923 030 8818',
-                    vk: 'https://vk.com/po_katyusha',
-                    vk_name: 'po_katyusha',
-                    tg_name: '@poktsh',
-                    tg: 'https://t.me/poktsh'
+                    phone: '+7 912 602 36 69',
+                    vk: 'https://vk.com/k.lerryy',
+                    vk_name: 'k.lerryy',
+                    tg_name: '@k_lerryy',
+                    tg: 'https://t.me/k_lerryy'
                 }
             }
         ]
@@ -291,13 +291,13 @@ const commissionList = [
         images: imagesASN,
         people: [
             {
-                fio: 'Нохрина Даша',
+                fio: 'Бучельникова Диана',
                 contacts: {
-                    phone: '+7 982 638 4143',
-                    vk: 'https://vk.com/darianokhrinaa',
-                    vk_name: 'darianokhrinaa',
-                    tg_name: '@darianokhrina',
-                    tg: 'https://t.me/darianokhrina'
+                    phone: '+7 953 608 1752',
+                    vk: 'https://vk.com/dianab3',
+                    vk_name: 'dianab3',
+                    tg_name: '@Nana_Dii',
+                    tg: 'https://t.me/Nana_Dii'
                 }
             }
         ]
@@ -316,13 +316,13 @@ const commissionList = [
         images: imagesUNK,
         people: [
             {
-                fio: 'Овчинников Андрей',
+                fio: 'Сафиуллин Дамир',
                 contacts: {
-                    phone: '+7 919 302 3982',
-                    vk: 'https://vk.com/mrmogo',
-                    vk_name: 'mrmogo',
-                    tg_name: '@mrmogo',
-                    tg: 'https://t.me/mrmogo'
+                    phone: '+7 961 043 7616',
+                    vk: 'https://vk.com/nn147',
+                    vk_name: 'nn147',
+                    tg_name: '@n1nja147',
+                    tg: 'https://t.me/n1nja147'
                 }
             }
         ]
@@ -340,13 +340,13 @@ const commissionList = [
         images: imagesPART,
         people: [
             {
-                fio: 'Даниелян Ашот',
+                fio: 'Фролова Даша',
                 contacts: {
-                    phone: '+7 912 615 1871',
-                    vk: 'https://vk.com/hywyh',
-                    vk_name: 'hywyh',
-                    tg_name: '@hywwyh',
-                    tg: 'https://t.me/hywwyh'
+                    phone: '+7 908 246 4045',
+                    vk: 'https://vk.com/graziazz',
+                    vk_name: 'graziazz',
+                    tg_name: '@graziazz',
+                    tg: 'https://t.me/graziazz'
                 }
             }
         ]
@@ -366,13 +366,13 @@ const commissionList = [
         images: imagesIK,
         people: [
             {
-                fio: 'Бахарева Настя',
+                fio: 'Кудряшова яра',
                 contacts: {
-                    phone: '+7 993 775 2605',
-                    vk: 'https://vk.com/emma_shifter',
-                    tg_name: '@emma_shifter',
-                    vk_name: 'emma_shifter',
-                    tg: 'https://t.me/emma_shifter'
+                    phone: '+7 952 336 8214',
+                    vk: 'https://vk.com/yararice',
+                    tg_name: '@yararice',
+                    vk_name: 'yararice',
+                    tg: 'https://t.me/yararice'
                 }
             }
         ]
@@ -418,13 +418,13 @@ const commissionList = [
         images: imagesIK,
         people: [
             {
-                fio: 'Бахарева Настя',
+                fio: 'Кудряшова яра',
                 contacts: {
-                    phone: '+7 993 775 2605',
-                    vk: 'https://vk.com/emma_shifter',
-                    tg_name: '@emma_shifter',
-                    vk_name: 'emma_shifter',
-                    tg: 'https://t.me/emma_shifter'
+                    phone: '+7 952 336 8214',
+                    vk: 'https://vk.com/yararice',
+                    tg_name: '@yararice',
+                    vk_name: 'yararice',
+                    tg: 'https://t.me/yararice'
                 }
             }
         ]
