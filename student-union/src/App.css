@@ -70,6 +70,7 @@ Link {
   color: #28292C;
   padding: 2.604vw 6.25vw 0vw;
   font-family: 'Mont';
+  width: 100%;
 }
 
 .Header {
@@ -89,6 +90,8 @@ Link {
 .Header > div > a {
   font-size: 1.458vw;
   font-weight: 700;
+  color: #28292C;
+  text-decoration: none;
 }
 
 h1 {
@@ -1805,5 +1808,43 @@ h1 {
     padding: 16px;
     border-radius: 6px;
     border: 2px solid #1941D1;
+  }
+
+  .Header > .mobile-menu {
+    display: block;
+  }
+  .mobile-menu {
+    background-image: url(../src/img/header-mob-bg.svg);
+    background-repeat: no-repeat;
+    background-size: cover; /* или 100% 100%, в зависимости от цели */
+    background-position: center;
+    z-index: 1000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 50%;
+    padding: 13px 16px 46px;
+  }
+  .mobile-menu-a {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: flex-start;
+  }
+  .mobile-menu a {
+    font-size: 16px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .mobile-menu-interface {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 36px;
   }
 }
