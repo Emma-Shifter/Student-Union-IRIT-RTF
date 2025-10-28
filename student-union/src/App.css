@@ -1230,6 +1230,10 @@ h1 {
 .ProfPage .mansory-title-mob {
   display: none;
 }
+.Header .burger-btn,
+.Header .burger-btn-dark {
+  display: none;
+}
 
 /*МОБИЛЬНАЯ ВЕРСИЯ*/
 
@@ -1295,13 +1299,11 @@ h1 {
     height: 16.6px;
   }
 
-
   .MainPage .Info p {
     font-size: 12px;
     padding-right: 9px;
     padding-left: 9px;
     padding-bottom: 9px;
-
   }
 
   .MainPage .Info h1 {
@@ -1812,6 +1814,13 @@ h1 {
 
   .Header > .mobile-menu {
     display: block;
+  }
+  .MainPage > .Hero > .Header > .mobile-menu {
+    width: 100%;
+    max-width: 100%;
+    height: max-content;
+    display: block;
+    box-sizing: border-box;
   }
   .mobile-menu {
     background-image: url(../src/img/header-mob-bg.svg);
