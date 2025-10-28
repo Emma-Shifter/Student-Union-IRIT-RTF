@@ -1847,4 +1847,82 @@ h1 {
     align-items: center;
     margin-bottom: 36px;
   }
+
+  .MaterialHelpPage h1 {
+    font-size: 24px;
+    font-weight: 950;
+    width: 70%;
+    line-height: 100%;
+  }
+  .MaterialHelpPage p {
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .mp-elem-container {
+    flex-direction: column;
+  }
+  .mp-elem-0 {
+    height: 210px;
+    padding-left: 40%;
+    padding-top: 7%;
+  }
+  .mp-elem-1 {
+    height: 277px;
+    width: 75%;
+    margin-left: 61px;
+    margin-right: 16px;
+    margin-bottom: 20px;
+  }
+  .mp-elem-2 {
+    margin-top: 10px;
+    height: 223px;
+    width: 87%;
+    margin-left: 47px;
+    margin-bottom: 50px;
+  }
+  .MaterialHelpPage > .mp-elem-0-text {
+    top: 378px;
+    font-size: 20px;
+  }
+  .MaterialHelpPage > .mp-elem-1-text {
+    top: 690px;
+    font-size: 20px;
+  }
+  .MaterialHelpPage > .mp-elem-2-text {
+    font-size: 20px;
+    top: 980px;
+    left: 16px;
+    text-wrap: nowrap;
+  }
+  .mp-elem-0 > .PartOfTeam {
+    height: 80px;
+  }
+  .mp-elem-1 > .PartOfTeam {
+    height: 87px;
+    width: 80%;
+    margin-left: 18%;
+    margin-top: 5%;
+  }
+  .mp-elem-2 > .PartOfTeam {
+    height: 74px;
+    margin-left: 5%;
+    margin-top: 5%;
+  }
+  .mp-elem-0 h3,
+  .mp-elem-1 h3,
+  .mp-elem-2 h3 {
+    font-size: 20px;
+  }
+  .mp-elem-0 p,
+  .mp-elem-1 p,
+  .mp-elem-2 p {
+    font-size: 16px;
+  }
+  .mp-elem-0 p {
+    width: 88%;
+  }
+  .mp-elem-1 p {
+    width: 75%;
+  }
 }
