@@ -1224,6 +1224,9 @@ h1 {
 .teamElem:nth-child(10) {
   display: none;
 }
+.ProfPage .mansory-title-mob {
+  display: none;
+}
 
 /*МОБИЛЬНАЯ ВЕРСИЯ*/
 
@@ -1714,5 +1717,93 @@ h1 {
   }
   .category-reason-container > div > p {
     font-size: 14px;
+  }
+
+  .prof-bonus-container {
+    flex-direction: column-reverse;
+  }
+  .prof-bonus-container-right {
+    width: 100%;
+    height: 364px;
+    margin-bottom: 10px;
+  }
+  .prof-bonus-container-left {
+    width: 100%;
+  }
+  .prof-bonus-container-right img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .prof-bonus-container-left h1 {
+    font-size: 24px;
+    line-height: 100%;
+    width: 60%;
+  }
+  .prof-bonus-container-left .prof-bonus-container-left-extra-text {
+    font-size: 14px;
+    width: 100%;
+    margin-top: 10px;
+  }
+  .prof-etc p{
+    font-size: 12px;
+    font-style: italic;
+    line-height: 100%;
+  }
+  .prof-etc img {
+    width: 13px;
+  }
+  .prof-etc {
+    gap: 10px;
+    margin-bottom: 50px;
+  }
+  .ps-ad-container {
+    align-items: center;
+  }
+  .ps-ad-container img {
+    width: 17px;
+  }
+  .algo-step img {
+    width: 21px;
+  }
+  .algo-step {
+    width: 80%;
+    align-items: center;
+  }
+  .algo-step p{
+    font-size: 14px;
+  }
+  .algo-text {
+    font-size: 14px;
+  }
+  .ps-ad-container .mp-category div {
+    margin-bottom: 0px;
+    font-size: 20px;
+    padding: 6px 10px;
+    border-radius: 5px;
+  }
+
+  .ProfPage > .masonry-grid {
+    margin-top: 50px !important; 
+  }
+  .ProfPage .mansory-title-mob {
+    display: block;
+    font-size: 24px;
+    font-weight: 950;
+    color: #1941D1;
+    text-align: start;
+    margin-bottom: 2.604vw;
+    line-height: 120%;
+  }
+  .ProfPage .mansory-title {
+    display: none;
+  }
+  .masonry-item.prof-plus-elem {
+    font-size: 14px;
+    background-color: #FFFFFF;
+    padding: 16px;
+    border-radius: 6px;
+    border: 2px solid #1941D1;
   }
 }

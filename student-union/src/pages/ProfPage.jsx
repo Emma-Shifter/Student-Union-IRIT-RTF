@@ -109,6 +109,7 @@ export default function ProfPage(props) {
                         </div>
                     </div>
                 </div>
+                <div className="mansory-title-mob">«ПЛЮШКИ» ПРОФСОЮЗНИКА</div>
                 {profPlusList.map((elem) => (
                     <div className="masonry-item prof-plus-elem">{elem}</div>
                 ))}
